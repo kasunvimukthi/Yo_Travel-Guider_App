@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="My Profile" />
+<!--        <item-->
+<!--            android:id="@+id/nav_booking_details"-->
+<!--            android:icon="@drawable/navigation"-->
+<!--            android:title="My Booking Details" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_guider"-->
+<!--            android:icon="@drawable/location"-->
+<!--            android:title="Guider Details" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>

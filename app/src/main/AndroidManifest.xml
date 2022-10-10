@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yo_travel.yo_travelguider">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_travelling"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yo_TravelGuider">
+        <activity
+            android:name=".DrawerActivity2.DeleteMe"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity2.QRcode"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity2.Password"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity2.My_Info"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity1.Activity1"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerMain.DrawerMain"
+            android:exported="false" />
+        <activity
+            android:name=".Login.Login"
+            android:exported="false" />
+        <activity android:name=".Login.CaptureAct"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"/>
+        <activity
+            android:name=".Slider.SliderAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Slider.Slider"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".Location.MyLocation"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
